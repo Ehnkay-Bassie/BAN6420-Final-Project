@@ -143,6 +143,7 @@ Install the required Python packages using pip:
 **Step 7: Access Your Application**
 
 - Open a web browser and navigate to your EC2 instance's public DNS to access the Income and Expense Survey Tool. 
---
-Issue encountered: I had issues with my debit card registration during the AWS account signup process, but a friend's AWS account was used to practice.
+----
+
+* Issue encountered: I had issues with my debit card registration during the AWS account signup process, but a friend's AWS account was used to practice.
 ---
