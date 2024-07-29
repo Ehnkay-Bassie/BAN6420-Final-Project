@@ -22,17 +22,17 @@
 
 ## Files Description
 
-- **application.py**: Main Flask application file. This is the first file to be run, which will render the index.html file.
-- **index.html**: Frontend HTML form for collecting survey data. Ensure that this file is in a folder named 'templates'.
-- **process_data.py**: Python Script for processing data, exporting data from MongoDB to CSV, and loading CSV data into a DataFrame.
+- **application.py**: Main Flask application file. This is the first file to be executed, which will render the 'index.html' file.
+- **index.html**: Frontend HTML form for collecting survey data and submitting to the mongoDB database. Ensure that this file is in a folder named 'templates', as Flask automatically looks for 'index.html' in a 'templates' folder.
+- **process_data.py**: Python Script for processing data, exporting data from MongoDB to CSV, loading CSV data into a DataFrame, and saving as 'survey_data.csv'.
 - **survey_data.csv**: CSV file containing the survey data downloaded from the mongoDB database.
 - **data_analysis.ipynb**: Jupyter Notebook for loading the downloaded csv file for data analysis and visualization.
-- **README.md**: This is the file you have open that gives you a detailed instruction of how to run the other files system and execute the project.
+- **README.md**: This is the file you have open that gives you a detailed instruction on how to run the other files in the system and to properly execute the project.
 ------------------------------
 
 ## Requirements
 
-- Python 3.x
+- Python 3.x (Python 3.11.9 and below is recommended, as AWS hosting services are not yet compatible with Python 3.12)
 - Flask
 - pymongo
 - pandas
