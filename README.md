@@ -27,7 +27,7 @@
 - **process_data.py**: Python Script for processing data, exporting data from MongoDB to CSV, loading CSV data into a DataFrame, and saving as 'survey_data.csv'.
 - **survey_data.csv**: CSV file containing the survey data downloaded from the mongoDB database.
 - **data_analysis.ipynb**: Jupyter Notebook for loading the downloaded csv file for data analysis and visualization.
-- **README.md**: This is the file you have open that gives you a detailed instruction on how to run the other files in the system and to properly execute the project.
+- **README.md**: This is the file you have open, which gives you a detailed instruction on how to run the other files in the system and to properly execute the project.
 ------------------------------
 
 ## Requirements
