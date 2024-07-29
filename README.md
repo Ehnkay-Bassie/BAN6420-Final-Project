@@ -1,6 +1,6 @@
-==============================
+-------------------------------
 # Flask Healthcare Application: Income and Expense Survey Tool
-==============================
+-------------------------------
 
 
 ## Project Overview
@@ -11,13 +11,13 @@
 
 ## Project Structure
 
-├── application.py
-├── templates
-│   └── index.html
-├── process_data.py
-├── survey_data.csv
-├── data_analysis.ipynb
-└── README.md
+- ├── application.py
+- ├── templates
+- │   └── index.html
+- ├── process_data.py
+- ├── survey_data.csv
+- ├── data_analysis.ipynb
+- └── README.md
 -------------------------
 
 ## Files Description
@@ -51,22 +51,22 @@ Install the required Python packages using pip:
 -----
 **Step 2: Run the Flask Application**
 
-Ensure MongoDB is running on your local machine. Then, start the Flask application:
+- Ensure MongoDB is running on your local machine. Then, start the Flask application:
 
     python application.py
 
-Open a web browser and navigate to `http://127.0.0.1:5000` to access the rendered html survey form. 
-All submitted survey data via the form, goes to the mongoDB database.
------
+- Open a web browser and navigate to `http://127.0.0.1:5000` to access the rendered html survey form. 
+- All submitted survey data via the form, goes to the mongoDB database.
+------
 **Step 3: Process Data**
 
-Run the data processing script to export the survey data from MongoDB to CSV and load it into a DataFrame:
+- Run the data processing script to export the survey data from MongoDB to CSV and load it into a DataFrame:
 
     python process_data.py
 -----
 **Step 4: Data Analysis**
 
-Open the `data_analysis.ipynb` Jupyter Notebook to perform data analysis and generate visualizations. Ensure you have Jupyter Notebook installed, and start it with:
+- Open the `data_analysis.ipynb` Jupyter Notebook to perform data analysis and generate visualizations. Ensure you have Jupyter Notebook installed, and start it with:
 
     jupyter notebook data_analysis.ipynb
 ----------------------------------------------------
@@ -85,44 +85,43 @@ Open the `data_analysis.ipynb` Jupyter Notebook to perform data analysis and gen
 -----
 **Step 2: Connect to Your EC2 Instance**
 
-Use the key pair created during the instance launch to connect via SSH
+- Use the key pair created during the instance launch to connect via SSH
 -----
 **Step 3: Install Dependencies on EC2**
 
-Update the package manager and install required packages:
+- Update the package manager and install required packages:
 
     sudo yum update -y
     sudo yum install python3 -y
     sudo yum install git -y
 
-Install pip and necessary Python packages:
+- Install pip and necessary Python packages:
 
     sudo amazon-linux-extras install python3.8
     python3 -m pip install Flask pymongo pandas matplotlib seaborn
 -----
 **Step 4: Deploy the Flask Application**
 
-Clone your project repository from GitHub or upload your project files to the EC2 instance
+- Clone your project repository from GitHub or upload your project files to the EC2 instance
 -----
 **Step 5: Configure and Start the Flask Application**
 
-Ensure MongoDB is configured (either install MongoDB on the EC2 instance or use MongoDB Atlas for a managed solution).
+- Ensure MongoDB is configured (either install MongoDB on the EC2 instance or use MongoDB Atlas for a managed solution).
 
-Start the Flask application:
+- Start the Flask application:
 
     python3 application.py
 -----
-**Step 6: Configure Nginx as a Reverse Proxy **
+**Step 6: Configure Nginx as a Reverse Proxy**
 
-Install Nginx:
+- Install Nginx:
 
     sudo amazon-linux-extras install nginx1.12
     sudo service nginx start
 
-Configure Nginx to forward requests to the Flask application. Edit the Nginx configuration file:
+- Configure Nginx to forward requests to the Flask application.
 
-
-Add the following configuration within the `http` block:
+- Edit the Nginx configuration file. Add the following configuration within the `http` block:
 
     server {
         listen 80;
@@ -137,12 +136,13 @@ Add the following configuration within the `http` block:
         }
     }
 
-Restart Nginx to apply the changes:
+- Restart Nginx to apply the changes:
 
     sudo service nginx restart
 ----
 **Step 7: Access Your Application**
 
-Open a web browser and navigate to your EC2 instance's public DNS to access the Income and Expense Survey Tool. 
+- Open a web browser and navigate to your EC2 instance's public DNS to access the Income and Expense Survey Tool. 
 --
-Issue encountered: I had issues with my debit card registration during the AWS account sign up process, but i used a friend's AWS account to practice.
+Issue encountered: I had issues with my debit card registration during the AWS account signup process, but a friend's AWS account was used to practice.
+---
