@@ -53,7 +53,7 @@ Install the required Python packages using pip:
 
 - Ensure MongoDB is running on your local machine. Then, start the Flask application:
 
-    python application.py
+    'python application.py'
 
 - Open a web browser and navigate to `http://127.0.0.1:5000` to access the rendered html survey form. 
 - All submitted survey data via the form, goes to the mongoDB database.
@@ -62,7 +62,7 @@ Install the required Python packages using pip:
 
 - Run the data processing script to export the survey data from MongoDB to CSV and load it into a DataFrame:
 
-    python process_data.py
+    'python process_data.py'
 -----
 **Step 4: Data Analysis**
 
