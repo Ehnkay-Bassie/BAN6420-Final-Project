@@ -38,7 +38,7 @@
 - pandas
 - matplotlib
 - seaborn
-- MongoDB
+- MongoDB (Download and install the MongoDBCompass database application)
 -----------------------------
 
 ## Setup Instructions
